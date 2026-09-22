@@ -1,5 +1,4 @@
 # PowerRig
-PowerRig :- This is a Fully Working Computer parts and Accessories buying site with fully backend and Admin Parts included 
 # E-Commerce Web Application
 
 A robust, PHP-driven web application designed for e-commerce management. Features include product administration, wishlist management, user account verification, and automated PDF invoice generation.
