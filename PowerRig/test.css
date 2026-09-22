@@ -1,0 +1,45 @@
+.comment-cont {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comment-title-cont {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comment-title {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: #000 1px solid;
+}
+  
+  .comments-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .comment-text {
+    flex: 1;
+  }
+  
+  .review,
+  .review-datetime {
+    margin: 0;
+  }
+  
+  .review-datetime {
+    color: #aaa;
+    font-size: 0.8rem;
+  }
+  

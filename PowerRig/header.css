@@ -1,0 +1,323 @@
+/* =========================================================================
+   HEADER ARCHITECTURE DESIGN SYSTEM (header.css)
+   ========================================================================= */
+
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(22, 25, 32, 0.85); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: var(--transition-smooth);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* Left Grouping alignment */
+.header-left-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Brand Logo Layout styling */
+.header-logo img {
+  display: block;
+  max-width: 215px;
+  height: auto;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.header-logo:hover img {
+  transform: scale(1.05);
+}
+
+/* Header Action Controls - Flex-end layout alignment */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto; /* Forces structural shift to the far right end */
+}
+
+.header-action-btn {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.35rem;
+  transition: var(--transition-smooth);
+}
+
+.header-action-btn ion-icon {
+  pointer-events: none;
+  transition: var(--transition-smooth);
+}
+
+.header-action-btn:hover {
+  background-color: var(--bg-surface-accent);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--accent);
+}
+
+.header-action-btn:hover ion-icon {
+  transform: translateY(-1px);
+}
+
+/* Compound Cart Layout button styling */
+.header-action-btn.cart-btn {
+  width: auto;
+  height: 44px;
+  border-radius: 22px;
+  padding-inline: 16px;
+  display: flex;
+  gap: 10px;
+  background-color: var(--bg-surface-accent);
+}
+
+.cart-btn .icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-total-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.3px;
+}
+
+.header-action-btn:hover .cart-total-value {
+  color: var(--accent);
+}
+
+/* Universal Notification Badges styling */
+.btn-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  min-width: 18px;
+  height: 18px;
+  padding-inline: 4px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--bg-surface);
+}
+
+.cart-btn .btn-badge {
+  top: -8px;
+  right: -8px;
+}
+
+/* User Profile Image Architecture */
+.header-profile-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.header-profile-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-fallback {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-surface-accent);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: var(--transition-smooth);
+}
+
+.header-profile-btn:hover .avatar-fallback {
+  color: var(--accent);
+}
+
+/* Pulse animation triggered for valid counts */
+.animated-badge {
+  animation: badgePop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Hamburger Menu Icon Architecture */
+.nav-open-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-open-btn .line {
+  width: 22px;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+/* =========================================================================
+   MOBILE RESPONSIVE DRAWERS SYSTEM & OVERLAYS
+   ========================================================================= */
+
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: var(--bg-surface);
+  z-index: 150;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-navbar.active {
+  transform: translateX(300px);
+}
+
+.sidebar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-top .logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+.nav-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.nav-close-btn:hover {
+  color: var(--accent);
+  transform: rotate(90deg);
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: block;
+  padding-block: 6px;
+  transition: var(--transition-smooth);
+}
+
+.navbar-link:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 140;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-smooth);
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================================================================
+   KEYFRAME ANIMATION AND MEDIA QUERIES BREAKPOINTS
+   ========================================================================= */
+
+@keyframes badgePop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .nav-open-btn {
+    display: flex;
+  }
+  .header-container {
+    height: 70px;
+  }
+  .cart-total-value {
+    display: none; /* Collapses total tracking amount text on small devices */
+  }
+  .header-actions {
+    gap: 8px; /* Tighter padding margins on mobile views */
+  }
+  .header-action-btn, 
+  .header-profile-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+  .header-action-btn.cart-btn {
+    padding-inline: 10px;
+    height: 38px;
+  }
+}

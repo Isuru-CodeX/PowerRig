@@ -1,0 +1,256 @@
+/* =========================================================================
+   TULIP COMPUTERS CART STYLE SYSTEM
+   ========================================================================= */
+
+body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Base Full Width Wrappers */
+.site-header-wrapper {
+    width: 100%;
+}
+
+.cart-main-workspace {
+    width: 100%;
+    max-width: 1320px;
+    margin: 40px auto;
+    padding-inline: 24px;
+    flex-grow: 1;
+}
+
+.cart-table-container {
+    background-color: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 24px;
+}
+
+/* Workspace Matrix Alignments */
+.table-header-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.th-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.cart-item-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    padding-block: 20px;
+}
+
+.product-media-frame {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.product-media-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.item-title-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.item-desc-text {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.item-price-display {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Dynamic Increment & Decrement Control Bar */
+.qty-control-deck {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.qty-deck-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.qty-deck-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #00a8ff;
+}
+
+.qty-deck-value {
+    width: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+/* Action Systems Elements */
+.btn-action-delete {
+    background: transparent !important;
+    border: none !important;
+    color: var(--text-secondary) !important;
+    font-size: 1.4rem !important;
+    cursor: pointer;
+    transition: var(--transition-smooth) !important;
+    padding: 4px;
+}
+
+.btn-action-delete:hover {
+    color: #ff4d4d !important;
+}
+
+/* Lower Control Deck & Summary Panels */
+.action-summary-deck {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 30px;
+    background-color: var(--bg-surface-accent);
+    padding: 24px 30px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.navigation-actions-cluster {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-navigation-action {
+    background-color: #00a8ff; /* Tulip Cyan Accent */
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-navigation-action:hover {
+    opacity: 0.9;
+}
+
+.btn-navigation-secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-navigation-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.summary-metrics-board {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.metric-label {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.metric-value {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.metric-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-block: 4px;
+}
+
+.metric-total-highlight .metric-label {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .table-header-row { display: none; }
+    .cart-item-row {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .action-summary-deck {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .navigation-actions-cluster { flex-direction: column; }
+    .summary-metrics-board { min-width: 100%; }
+}
+
+/* CHANGED: Target the main action checkout button explicitly to make it Red */
+.navigation-actions-cluster .btn-navigation-action:not(.btn-navigation-secondary) {
+    background-color: #ff4a5a !important;
+    color: #ffffff !important;
+}
+
+/* Hover state behavior for the checkout button */
+.navigation-actions-cluster .btn-navigation-action:not(.btn-navigation-secondary):hover {
+    background-color: #e03b4a !important;
+    opacity: 0.95;
+}
+
+/* CHANGED: Update the subtotal summary text value highlight to Red */
+.metric-total-highlight .metric-value {
+    color: #ff4a5a !important;
+    font-size: 1.25rem;
+}
