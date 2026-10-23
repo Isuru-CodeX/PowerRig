@@ -10,25 +10,27 @@ if (isset($_SESSION["admin"]) && isset($_GET["id"])) {
     $product_num = $product_rs->num_rows;
 
     if ($product_num > 0) {
-        // Loop through each linked product to safely purge its relational dependencies
+        $product_ids = [];
+        // Loop through each linked product to get all product IDs
         while ($product_data = $product_rs->fetch_assoc()) {
-            $product_id = $product_data["id"];
-
-            // A. Clear references from user shopping carts
-            Database::iud("DELETE FROM `cart` WHERE `product_id` = '" . $product_id . "'");
-
-            // B. Clear references from user wishlists
-            Database::iud("DELETE FROM `wishlist` WHERE `product_id` = '" . $product_id . "'");
-
-            // C. Clear references from purchase history invoice logs
-            Database::iud("DELETE FROM `invoice_item` WHERE `product_id` = '" . $product_id . "'");
-
-            // D. Clear linked product image gallery paths
-            Database::iud("DELETE FROM `product_img` WHERE `product_id` = '" . $product_id . "'");
-
-            // E. Finally, delete the product itself
-            Database::iud("DELETE FROM `product` WHERE `id` = '" . $product_id . "'");
+            $product_ids[] = "'" . $product_data["id"] . "'";
         }
+        $id_list = implode(",", $product_ids);
+
+        // A. Clear references from user shopping carts
+        Database::iud("DELETE FROM `cart` WHERE `product_id` IN (" . $id_list . ")");
+
+        // B. Clear references from user wishlists
+        Database::iud("DELETE FROM `wishlist` WHERE `product_id` IN (" . $id_list . ")");
+
+        // C. Clear references from purchase history invoice logs
+        Database::iud("DELETE FROM `invoice_item` WHERE `product_id` IN (" . $id_list . ")");
+
+        // D. Clear linked product image gallery paths
+        Database::iud("DELETE FROM `product_img` WHERE `product_id` IN (" . $id_list . ")");
+
+        // E. Finally, delete the products themselves
+        Database::iud("DELETE FROM `product` WHERE `id` IN (" . $id_list . ")");
     }
 
     // 2. Clear out any brand-to-category mapping rules if you use a mapping/junction table 
