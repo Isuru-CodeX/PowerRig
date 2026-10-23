@@ -45,7 +45,7 @@ if (isset($_SESSION["user"])) {
                         </div>
 
                         <?php
-                        // FIX: product table has no user_email column (single-vendor store, no seller concept).
+                        // NOTE: product table has no user_email column (single-vendor store, no seller concept).
                         // The original query joined product -> user on a non-existent column, which would
                         // fatally error. invoice_item already carries product_id, so we pull product/img
                         // details separately per row below instead of cramming a broken join in here.
@@ -97,7 +97,7 @@ if (isset($_SESSION["user"])) {
                                                 $order_data = $order_rs->fetch_assoc();
                                                 $row_delay += 0.04;
 
-                                                // FIX: pull product + first image separately (no user_email on product table)
+                                                // NOTE: pull product + first image separately (no user_email on product table)
                                                 $product_rs = Database::search("SELECT * FROM `product` WHERE `id`='" . intval($order_data["product_id"]) . "'");
                                                 $product_data = $product_rs->fetch_assoc();
 
@@ -117,7 +117,7 @@ if (isset($_SESSION["user"])) {
                                                 ];
                                                 $status_class = $status_classes[$status_id] ?? "status-confirm";
 
-                                                // FIX: only allow leaving feedback once the order has actually been delivered
+                                                // NOTE: only allow leaving feedback once the order has actually been delivered
                                                 $can_comment = ($status_id == 5);
 
                                                 $pid = intval($order_data['product_id']);
