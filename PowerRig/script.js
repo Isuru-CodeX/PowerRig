@@ -1664,8 +1664,6 @@ function updateFiltersCascade() {
 // Function to launch multi-item and multi-quantity cart transactions using Stripe
 function checkoutCartBundle() {
     // Show user feedback while communicating with Stripe API gateway pipeline
-    console.log("Initiating multi-item transaction bundle...");
-    
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
