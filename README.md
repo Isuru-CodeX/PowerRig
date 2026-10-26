@@ -1,16 +1,8 @@
 # PowerRig - E-Commerce Web Application
 
-A robust, PHP-driven web application designed for an ultimate PC parts, gaming gear, and accessories store. PowerRig features a comprehensive single-vendor e-commerce platform with product administration, seamless user experiences, integrated payment processing, and automated PDF invoice generation.
+A robust, PHP-driven web application designed for an ultimate PC parts, gaming gear, and accessories store. It provides a complete end-to-end shopping experience, from browsing products and managing wishlists to secure checkout via Stripe and automated invoice generation. PowerRig features a comprehensive single-vendor e-commerce platform with product administration, making it an ideal solution for PC parts store owners.
 
----
-
-## 🚀 Overview
-
-PowerRig is a single-vendor e-commerce store meaning all products are managed directly by the store administrators. It provides a complete end-to-end shopping experience, from browsing products and managing wishlists to secure checkout via Stripe and automated invoice generation.
-
----
-
-## ✨ Features
+## Features
 
 ### For Users
 - **Account Management**: User registration, profile updating, and secure email verification (`userProfile.php`, `verificationProcess.php`).
@@ -25,31 +17,86 @@ PowerRig is a single-vendor e-commerce store meaning all products are managed di
 - **Order Management**: Track orders, manage delivery fees, and update invoice statuses (`manageDelivery.php`, `changeInvoiceStatusProcess.php`).
 - **User Management**: Manage registered users and handle user blocking/status changes (`manageUsers.php`).
 
----
+## Technologies Used
 
-## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
+- **Backend:** PHP (Core PHP without frameworks)
+- **Database:** MySQL (Custom Database class wrapper - no ORM)
+- **Tools:** Git, Composer
+- **Integrations:** Stripe PHP SDK, PHPMailer, FPDF (PDF Generation)
 
-* **Backend**: PHP (Core PHP without frameworks)
-* **Frontend**: HTML5, CSS3, JavaScript, Bootstrap
-* **Database**: MySQL (Custom Database class wrapper - no ORM)
-* **Payment Gateway**: [Stripe PHP SDK](https://stripe.com/)
-* **Emailing**: [PHPMailer](https://github.com/PHPMailer/PHPMailer)
-* **PDF Generation**: [FPDF](http://www.fpdf.org/) for automated invoices
-* **Dependency Management**: Composer
+## Screenshots
 
----
+Add screenshots of the application's main pages here.
 
-## 🏗️ Architecture & Design
+![Application Screenshot](docs/screenshots/homepage.png)
 
-- **Single-Vendor Model**: The database and logic are structured around a single store owner. Products are not tied to specific user accounts (no `user_email` in the product table).
-- **Custom Database Wrapper**: The project uses a custom `Database` class wrapper (`connection.php`) to execute raw MySQL queries.
-- **Process-Driven Logic**: The backend logic is heavily separated into dedicated process files (e.g., `addToCartProcess.php`, `paymentProcess.php`) which handle asynchronous requests (AJAX) from the frontend securely.
+## Prerequisites
 
----
+Before running the project, install the required software:
 
-## 📁 Directory Structure
+- A local web server stack (e.g., XAMPP, WAMP, or LAMP) with **PHP** and **MySQL**.
+- **Composer** (globally installed to manage PHP dependencies).
+- **Git**
+- A **Stripe Account** for setting up test API keys.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd PowerRig
+   ```
+
+3. Install or resolve the project dependencies:
+
+   Run the following command to install Stripe and PHPMailer:
+   ```bash
+   composer install
+   ```
+
+4. Configure the database and environment variables as described below.
+
+## Database Setup
+
+1. Start your database server (e.g., via XAMPP or WAMP).
+2. Open your MySQL client (e.g., phpMyAdmin) and create a new database named `powerRig`.
+3. Import the SQL structure file provided in the repository, located at `database/powerRig.sql`.
+4. Configure the database connection using your local environment settings by updating `connection.php`:
+   ```php
+   Database::$connection = new mysqli("localhost", "root", "your_password", "powerRig", "3306");
+   ```
+
+## Configuration
+
+You will need to configure your API keys directly within the process files, as `.env` files are not currently used in this project setup.
+
+Update the following files with your credentials:
+
+- **Stripe**: Update `paymentProcess.php` (and any other relevant files) with your Stripe Test Secret Key.
+- **Email/PHPMailer**: Update the respective process files (like `verificationProcess.php`, `forgotPasswordProcess.php`) with your SMTP credentials for email delivery to work.
+
+Do not commit real passwords, API keys, or other secrets.
+
+## Running the Project
+
+1. Ensure the `PowerRig` folder is placed within your local server's web root directory (e.g., `htdocs` for XAMPP, `www` for WAMP).
+2. Start the Apache and MySQL services on your web server stack.
+3. Access the application in your browser using the local URL:
+   ```text
+   http://localhost/PowerRig/index.php
+   ```
+
+## Project Structure
 
 ```text
+PowerRig/
 ├── database/                  # SQL dump (powerRig.sql) for database structure
 ├── font/                      # Font definitions for PDF invoice generation (FPDF)
 ├── invoices/                  # Automatically generated PDF invoices
@@ -61,49 +108,29 @@ PowerRig is a single-vendor e-commerce store meaning all products are managed di
 ├── index.php                  # Entry point of the application
 ├── paymentProcess.php         # Stripe checkout initialization logic
 ├── script.js                  # Main frontend JavaScript logic including AJAX calls
-└── ...                        # Various process scripts, CSS, and views
+└── README.md
 ```
 
----
+## Testing
 
-## ⚙️ Prerequisites
+There is currently no automated test framework configured in the repository. Manual testing is required for both frontend and backend functionality. Ensure you test product addition, user registration, and Stripe checkout (using test cards) to verify the flow.
 
-To run this project locally, you will need:
-- A local web server stack (e.g., XAMPP, WAMP, or LAMP) with **PHP** and **MySQL**.
-- **Composer** installed globally to manage PHP dependencies.
-- A **Stripe Account** for setting up test API keys.
+## Known Issues
 
----
+- **Email Deliverability**: Emails for verification and password reset require valid SMTP credentials in the corresponding process files. Ensure these are set up correctly, otherwise functionality will break.
+- **Security**: The custom database wrapper requires careful handling of user inputs. Be mindful of potential SQL injection risks if raw queries are modified or new queries are poorly constructed.
 
-## 🚦 Installation Steps
+## Future Improvements
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd PowerRig
-   ```
+- Migrate to an MVC architecture to better separate business logic and presentation.
+- Implement an Object-Relational Mapper (ORM) for safer and easier database interactions.
+- Add an automated testing framework such as PHPUnit.
+- Implement `.env` file support to manage secrets and API keys outside of the codebase.
 
-2. **Database Setup:**
-   - Open your MySQL client (e.g., phpMyAdmin).
-   - Create a new database named `powerrig` (or import directly if the script creates it).
-   - Import the provided SQL structure file located at `database/powerRig.sql`.
-   - Update `connection.php` with your local MySQL credentials:
-     ```php
-     Database::$connection = new mysqli("localhost", "root", "your_password", "powerRig", "3306");
-     ```
+## Contributing
 
-3. **Install Dependencies:**
-   - Navigate to the project directory where `composer.json` is located.
-   - Run the following command to install Stripe and PHPMailer:
-     ```bash
-     composer install
-     ```
+Contributions are welcome! If you find any bugs or have suggestions, please open an issue or submit a pull request with your improvements.
 
-4. **Configure API Keys:**
-   - **Stripe**: Update `paymentProcess.php` (and any other relevant files) with your Stripe Test Secret Key.
-   - **Email/PHPMailer**: Update the respective process files (like `verificationProcess.php`, `forgotPasswordProcess.php`) with your SMTP credentials for email delivery to work.
+## License
 
-5. **Run the Application:**
-   - Ensure the project folder is within your local server's web root (e.g., `htdocs` for XAMPP).
-   - Start Apache and MySQL services.
-   - Access the application in your browser (adjust path as necessary).
+This project is licensed under the MIT License.
