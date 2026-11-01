@@ -1,35 +1,35 @@
 # PowerRig - E-Commerce Web Application
 
-A robust, PHP-driven web application designed for an ultimate PC parts, gaming gear, and accessories store. It provides a complete end-to-end shopping experience, from browsing products and managing wishlists to secure checkout via Stripe and automated invoice generation. PowerRig features a comprehensive single-vendor e-commerce platform with product administration, making it an ideal solution for PC parts store owners.
+Welcome to PowerRig, a robust, full-stack, PHP-driven web application tailored for the ultimate PC parts, gaming gear, and computer accessories store. PowerRig delivers a comprehensive, end-to-end e-commerce solution that covers the entire customer journey. Shoppers can seamlessly browse an extensive catalog of computer hardware, save their favorite builds or items to a personalized wishlist, add products to their shopping cart, and complete their purchases through a secure and streamlined checkout process powered by Stripe.
+
+Designed as a powerful single-vendor e-commerce platform, PowerRig is the perfect out-of-the-box solution for computer hardware retailers and independent PC parts store owners. It comes equipped with a dedicated and intuitive administrator dashboard that empowers store owners to effortlessly manage product catalogs, monitor inventory levels, track customer orders, and oversee registered users, all from one centralized hub.
+
+Whether you are looking to launch a boutique gaming gear store or a comprehensive PC components marketplace, PowerRig provides the essential features and performance to kickstart your online business.
 
 ## Features
 
 ### For Users
-- **Account Management**: User registration, profile updating, and secure email verification (`userProfile.php`, `verificationProcess.php`).
-- **Product Discovery**: Browse PC parts and gaming gear with advanced search and filtering.
-- **Cart & Wishlist**: Save favorite products to a wishlist or add them to the cart for purchase (`wishlist.php`, `cart.php`).
-- **Secure Checkout**: Integrated Stripe payment gateway for seamless and secure transactions (`paymentProcess.php`, `checkout.php`).
-- **Order History & Invoices**: View purchasing history and download automatically generated PDF invoices.
+- **Secure Account Management**: Fully-featured user registration, login, and profile management with secure email verification for new accounts and password resets (`userProfile.php`, `verificationProcess.php`).
+- **Advanced Product Discovery**: Effortlessly browse and search for PC components and gaming gear using advanced search criteria, detailed filtering options, and dynamic category navigation.
+- **Shopping Cart & Personalized Wishlist**: Easily save favorite products for later in a personalized wishlist, or add items directly to a responsive shopping cart for immediate purchase (`wishlist.php`, `cart.php`).
+- **Secure & Seamless Checkout**: Experience a frictionless checkout process with an integrated Stripe payment gateway, ensuring secure and reliable transaction processing (`paymentProcess.php`, `checkout.php`).
+- **Order History & Automated PDF Invoices**: Customers can track their purchasing history in a dedicated dashboard and download professionally formatted, automatically generated PDF invoices for their records (`purchasingHistory.php`, `invoice.php`).
+- **Responsive Design**: A fully responsive frontend layout built with Bootstrap, providing an optimized shopping experience across desktop, tablet, and mobile devices.
 
 ### For Administrators
-- **Dashboard & Analytics**: Comprehensive admin dashboard for store overview (`adminDashboard.php`).
-- **Product Management**: Add, update, manage inventory, and toggle product statuses (`manageProducts.php`, `addProduct.php`, `updateProduct.php`).
-- **Order Management**: Track orders, manage delivery fees, and update invoice statuses (`manageDelivery.php`, `changeInvoiceStatusProcess.php`).
-- **User Management**: Manage registered users and handle user blocking/status changes (`manageUsers.php`).
+- **Comprehensive Dashboard & Analytics**: Gain immediate insights into store performance with a centralized admin dashboard featuring key metrics, recent orders, and overall sales overview (`adminDashboard.php`).
+- **Robust Product Management**: Efficiently build and maintain the product catalog. Administrators can add new items with multiple images, update existing product details, manage stock inventory, configure dynamic pricing, and instantly toggle product visibility/status (`manageProducts.php`, `addProduct.php`, `updateProduct.php`).
+- **Streamlined Order & Delivery Management**: Monitor incoming orders, process shipments, update delivery fees dynamically based on regions, and manage overall invoice and fulfillment statuses (`manageDelivery.php`, `changeInvoiceStatusProcess.php`).
+- **Complete User Administration**: Maintain full control over the customer base. View all registered users, manage user statuses, and enforce platform security by handling user blocking or unblocking directly from the admin panel (`manageUsers.php`).
+- **Brand & Category Management**: Dynamically add and link new brands, categories, and models to keep the product catalog structured and up-to-date (`manageCategories.php`, `manageBrands.php`).
 
 ## Technologies Used
 
-- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
-- **Backend:** PHP (Core PHP without frameworks)
-- **Database:** MySQL (Custom Database class wrapper - no ORM)
-- **Tools:** Git, Composer
-- **Integrations:** Stripe PHP SDK, PHPMailer, FPDF (PDF Generation)
-
-## Screenshots
-
-Add screenshots of the application's main pages here.
-
-![Application Screenshot](docs/screenshots/homepage.png)
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript, Bootstrap 5
+- **Backend:** PHP (Core PHP/Procedural & Object-Oriented without heavy MVC frameworks)
+- **Database:** MySQL (Custom Database connection class wrapper utilizing mysqli - no ORM)
+- **Tools:** Git, Composer (Dependency Management)
+- **Integrations:** Stripe PHP SDK (Payments), PHPMailer (Email Services), FPDF (PDF Generation)
 
 ## Prerequisites
 
