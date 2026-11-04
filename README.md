@@ -1,34 +1,34 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ef4444,100:7f1d1d&height=230&section=header&text=PowerRig&fontSize=76&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=PC%20Parts%20%26%20Gaming%20Gear%20E-Commerce&descAlignY=58&descSize=20" width="100%" alt="PowerRig banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:b45309,100:7c2d12&height=230&section=header&text=BookVerse&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Online%20Library%20Portal%20%E2%80%A2%20Java%20EE&descAlignY=58&descSize=20" width="100%" alt="BookVerse banner" />
 
-<a href="https://github.com/Isuru-CodeX/PowerRig">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=EF4444&center=true&vCenter=true&width=700&lines=Full-stack+PHP+e-commerce+platform;Cart+%7C+Wishlist+%7C+Stripe+checkout;Automated+PDF+invoices;Powerful+admin+dashboard+for+store+owners" alt="Typing animation" />
+<a href="https://github.com/Isuru-CodeX/BookVerse">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=F59E0B&center=true&vCenter=true&width=700&lines=A+Java+EE+digital+library+and+catalog+manager;MVC+%7C+Front+Controller+%7C+DAO+%7C+Custom+JSTL+tags;Member+portal+%2B+full+admin+dashboard;MySQL+mode+or+zero-setup+in-memory+demo" alt="Typing animation" />
 </a>
 
 <br/>
 
 <p>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
-  <img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-  <img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white" alt="Composer" />
+  <img src="https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/JSP-2.3-B45309?style=for-the-badge&logo=jakartaee&logoColor=white" alt="JSP" />
+  <img src="https://img.shields.io/badge/Tomcat-9.x-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black" alt="Tomcat" />
+  <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Maven-3.6%2B-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven" />
 </p>
 
 <p>
-  <img src="https://img.shields.io/github/last-commit/Isuru-CodeX/PowerRig?style=flat-square&logo=git&color=green" alt="last commit" />
-  <img src="https://img.shields.io/github/commit-activity/t/Isuru-CodeX/PowerRig?style=flat-square&color=blue" alt="commits" />
-  <img src="https://img.shields.io/github/repo-size/Isuru-CodeX/PowerRig?style=flat-square&color=purple" alt="repo size" />
-  <img src="https://img.shields.io/github/license/Isuru-CodeX/PowerRig?style=flat-square&color=orange" alt="license" />
-  <img src="https://img.shields.io/github/stars/Isuru-CodeX/PowerRig?style=flat-square&logo=github&color=yellow" alt="stars" />
+  <img src="https://img.shields.io/github/last-commit/Isuru-CodeX/BookVerse?style=flat-square&logo=git&color=green" alt="last commit" />
+  <img src="https://img.shields.io/github/commit-activity/t/Isuru-CodeX/BookVerse?style=flat-square&color=blue" alt="commits" />
+  <img src="https://img.shields.io/github/repo-size/Isuru-CodeX/BookVerse?style=flat-square&color=purple" alt="repo size" />
+  <img src="https://img.shields.io/github/stars/Isuru-CodeX/BookVerse?style=flat-square&logo=github&color=yellow" alt="stars" />
 </p>
 
 <p>
   <a href="#-features"><b>✨ Features</b></a> •
-  <a href="#-how-it-works"><b>🔄 How It Works</b></a> •
+  <a href="#-architecture"><b>🏗️ Architecture</b></a> •
   <a href="#-getting-started"><b>🚀 Get Started</b></a> •
-  <a href="#-project-structure"><b>📂 Structure</b></a> •
+  <a href="#-membership-plans"><b>💳 Plans</b></a> •
+  <a href="#-database-design"><b>🗄️ Database</b></a> •
   <a href="#-roadmap"><b>🗺️ Roadmap</b></a>
 </p>
 
@@ -36,20 +36,20 @@
 
 ---
 
-## 🖥️ About
+## 📚 About
 
-**PowerRig** is a robust, full-stack, PHP-driven web app built for **PC parts, gaming gear and computer accessories** stores. It covers the entire customer journey: shoppers browse the catalogue, save favourites to a **wishlist**, fill a **cart** and pay through a **Stripe** checkout, then download an automatically generated **PDF invoice**.
+**BookVerse** is a JSP-based Java EE web application for library management, built for **HF2K – Web Component Development II (Component A)**. It shows off **Servlet 4.0, JSP 2.3, EL 3.0 and JSTL 1.2** in a realistic app with two audiences: **library members** and **administrative staff**.
 
-Designed as a **single-vendor platform**, it ships with an admin dashboard where store owners manage products, stock, orders and users from one place.
+> 💡 **Zero-setup friendly:** BookVerse runs in two persistence modes, a **MySQL database mode** (recommended) and an automatic **in-memory demo mode** that kicks in when no database is reachable.
 
 <!--
 📸 SCREENSHOTS: add your images to an /assets folder, then uncomment this block.
 
 <div align="center">
-  <img src="./assets/home.png" width="48%" alt="Home" />
-  <img src="./assets/cart.png" width="48%" alt="Cart" />
-  <img src="./assets/checkout.png" width="48%" alt="Checkout" />
-  <img src="./assets/admin.png" width="48%" alt="Admin dashboard" />
+  <img src="./assets/home.png" width="48%" alt="Home page" />
+  <img src="./assets/catalog.png" width="48%" alt="Catalogue" />
+  <img src="./assets/dashboard.png" width="48%" alt="Member dashboard" />
+  <img src="./assets/admin.png" width="48%" alt="Admin panel" />
 </div>
 -->
 
@@ -57,46 +57,55 @@ Designed as a **single-vendor platform**, it ships with an admin dashboard where
 
 ## ✨ Features
 
-### 🛒 For Customers
+### 👤 Member Portal
 
-| | Feature | Details |
+| | Feature | What you can do |
 |---|---|---|
-| 🔐 | **Account management** | Registration, login, profile editing, email verification and password reset |
-| 🔎 | **Product discovery** | Advanced search, filters and dynamic category navigation |
-| ❤️ | **Wishlist and cart** | Save items for later or add them straight to a responsive cart |
-| 💳 | **Secure checkout** | Integrated **Stripe** payment gateway |
-| 🧾 | **Orders and PDF invoices** | Purchase history dashboard and auto-generated downloadable invoices |
-| 📱 | **Responsive design** | Bootstrap 5 layout for desktop, tablet and mobile |
+| 🔎 | **Catalogue search** | Browse and search the book catalogue dynamically, with highlighted matches |
+| 📖 | **Reserve and return** | Borrow a title, return it, and keep a reading history |
+| 🔄 | **Renewals** | Renew active loans within your plan's renewal limit |
+| 💳 | **Membership plans** | Switch between Standard, Premium and Student tiers |
+| 💬 | **Feedback and news** | Submit feedback and read library announcements |
 
-### 🛡️ For Administrators
+### 🛡️ Admin (Staff) Panel
 
-| | Feature | Details |
+| | Tab | What staff can do |
 |---|---|---|
-| 📊 | **Dashboard and analytics** | Key metrics, recent orders and a sales overview |
-| 📦 | **Product management** | Add items with multiple images, edit details, manage stock and pricing, toggle visibility |
-| 🚚 | **Orders and delivery** | Track orders, update delivery fees by region, change invoice and fulfilment status |
-| 👥 | **User administration** | View users, block or unblock accounts |
-| 🏷️ | **Brands and categories** | Add and link brands, categories and models |
+| 📊 | **Overview** | Key stats, overdue loans, sold-out titles |
+| 📚 | **Books** | Search, add, edit and delete catalogue entries |
+| 👥 | **Members** | Update plans and roles, suspend accounts, reset passwords, view loan history |
+| 🔁 | **Loans** | Supervise active, overdue and returned loans; force-return or extend due dates |
+| 🧾 | **Plans** | Edit booking rules for every membership tier live |
+| 📢 | **Announcements and feedback** | Publish news to the home page and review member feedback |
+| 📈 | **Reports** | Most borrowed books and inventory distribution |
 
 ---
 
-## 🔄 How It Works
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A["👤 Customer"] --> B["🔎 Browse and search"]
-    B --> C["❤️ Wishlist"]
-    B --> D["🛒 Cart"]
-    C --> D
-    D --> E["💳 Stripe checkout"]
-    E --> F["🧾 PDF invoice"]
-    F --> G["📜 Purchase history"]
-    H["🛡️ Admin"] --> I["📦 Products and stock"]
-    H --> J["🚚 Orders and delivery"]
-    H --> K["👥 Users"]
-    I -.-> B
-    E -.-> J
+    A["🌐 Browser"] --> F["🚦 Filters<br/>Auth · Logging · Encoding"]
+    F --> B["🎛️ FrontController<br/>*.do"]
+    B --> C["⚙️ Command classes"]
+    C --> D["🧩 LibraryDelegate"]
+    D --> E{"💾 LibraryStore (DAO)"}
+    E -->|MySQL mode| G[("🐬 JdbcStore")]
+    E -->|Demo mode| H[("🧠 MemoryStore")]
+    C --> V["🖼️ JSP views + JSTL + custom tags"]
 ```
+
+| Pattern | Where it lives |
+|---|---|
+| **MVC** | `model/`, `bean/`, `service/` · JSP views · `FrontController` + `command/` |
+| **Front Controller** | `FrontController` intercepts every `.do` request and delegates to a `Command` |
+| **Command** | `Command` interface with 26 implementing classes |
+| **DAO** | `LibraryStore` implemented by `JdbcStore` (MySQL) and `MemoryStore` (in-memory) |
+| **Intercepting Filters** | `AuthFilter`, `LoggingFilter`, `EncodingFilter` |
+| **Business Delegate and Service Locator** | `LibraryDelegate`, `ServiceLocator` |
+| **Listeners** | `AppContextListener`, `SessionCountListener` |
+
+**Core domain models:** 📘 `Book` · 👤 `Member` (roles `STAFF` / `MEMBER`) · 🪪 `MembershipPlan` · 🔖 `Reservation` (a loan and its lifecycle)
 
 ---
 
@@ -104,17 +113,16 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,php,mysql,git,github,vscode&theme=dark" alt="tech stack icons" />
+<img src="https://skillicons.dev/icons?i=java,html,css,js,mysql,maven,git,github,idea&theme=dark" alt="tech stack icons" />
 
 </div>
 
 | Layer | Technologies |
 |---|---|
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript (AJAX), Bootstrap 5 |
-| **Backend** | PHP (core procedural and object-oriented, no heavy MVC framework) |
-| **Database** | MySQL via a custom `mysqli` wrapper class (no ORM) |
-| **Integrations** | Stripe PHP SDK (payments), PHPMailer (email), FPDF (PDF invoices) |
-| **Tools** | Git, Composer |
+| **Frontend** | HTML, CSS, JavaScript, JSP 2.3, EL 3.0, JSTL 1.2, custom tags and tag files |
+| **Backend** | Java EE (Servlet 4.0), Java 11+ |
+| **Database** | MySQL 8 or MariaDB |
+| **Tools** | Maven 3.6+, Apache Tomcat 9.x, Git |
 
 ---
 
@@ -122,85 +130,160 @@ flowchart LR
 
 ### ✅ Prerequisites
 
-- 🧰 A local server stack (**XAMPP**, **WAMP** or **LAMP**) with PHP and MySQL
-- 🎼 [Composer](https://getcomposer.org/) installed globally
-- 🔧 Git
-- 💳 A [Stripe](https://stripe.com/) account for test API keys
+- ☕ JDK 11 or higher
+- 📦 Maven 3.6+
+- 🐱 Apache Tomcat **9.x**
+
+  > ⚠️ Tomcat 9 uses the `javax.*` namespace. Tomcat 10+ needs `jakarta.*`.
+
+- 🐬 MySQL 8 / XAMPP / MariaDB *(optional, for database mode)*
 
 ### 📥 Installation
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/Isuru-CodeX/PowerRig.git
-cd PowerRig
+git clone https://github.com/Isuru-CodeX/BookVerse.git
+cd BookVerse
 
-# 2️⃣ Install Stripe and PHPMailer
-composer install
+# 2️⃣ Build the WAR (includes the MySQL JDBC driver)
+mvn clean package
 ```
 
-### 🗄️ Database setup
+### 🗄️ Database setup *(MySQL mode)*
 
-1. Start Apache and MySQL (for example from the XAMPP control panel)
-2. In phpMyAdmin, create a database named **`powerRig`**
-3. Import **`database/powerRig.sql`**
-4. Update the connection in `connection.php`:
-
-```php
-Database::$connection = new mysqli("localhost", "root", "your_password", "powerRig", "3306");
+```bash
+mysql -u root -p < database/bookverse.sql
 ```
+
+This creates the `bookverse` database, tables and user, and loads sample data (14 titles, 3 plans).
 
 ### ⚙️ Configuration
 
-This project doesn't use `.env` files yet, so keys are set directly in the process files:
+Connection settings live in `src/main/webapp/WEB-INF/web.xml`:
 
-| What | Where to update |
-|---|---|
-| 💳 **Stripe test secret key** | `paymentProcess.php` (and any other relevant files) |
-| 📧 **SMTP credentials (PHPMailer)** | `verificationProcess.php`, `forgotPasswordProcess.php` |
+```xml
+<env-entry>
+    <env-entry-name>db.url</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>jdbc:mysql://localhost:3306/bookverse?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Colombo</env-entry-value>
+</env-entry>
+```
 
-> 🔒 **Never commit real passwords or API keys.**
+Or override with environment variables:
+
+```bash
+BOOKVERSE_DB_URL=jdbc:mysql://localhost:3306/bookverse
+BOOKVERSE_DB_USER=your_username
+BOOKVERSE_DB_PASSWORD=your_password
+BOOKVERSE_DB_DRIVER=com.mysql.cj.jdbc.Driver
+```
+
+> 🧠 **In-memory mode:** leave `db.url` empty or simply don't start MySQL. Data resets on every restart.
 
 ### ▶️ Run it
 
-1. Place the `PowerRig` folder in your web root (`htdocs` for XAMPP, `www` for WAMP)
-2. Start Apache and MySQL
-3. Open **http://localhost/PowerRig/index.php**
+1. Copy `target/bookverse.war` into `<TOMCAT_HOME>/webapps/`
+2. Start Tomcat and open **http://localhost:8080/bookverse/**
+3. Check the page footer. It should say **"Data store: MySQL database"** (or the in-memory fallback)
+
+### 🔑 Demo accounts
+
+| Role | Email | Password |
+|---|---|---|
+| 👤 Member | `member@bookverse.lk` | `member123` |
+| 🛡️ Staff | `admin@bookverse.lk` | `admin123` |
+
+---
+
+## 💳 Membership Plans
+
+| Rule | 🥉 Standard | 🥇 Premium | 🎓 Student |
+|---|:---:|:---:|:---:|
+| Active loans at once | 3 | 8 | 5 |
+| Book loan period | 14 days | 28 days | 21 days |
+| Journal / magazine loan | 7 days | 14 days | 10 days |
+| Renewals per loan | 1 | 3 | 2 |
+| Monthly fee | Rs. 500 | Rs. 1,500 | Free |
+
+*These are defaults. Staff can edit every value on the **Plans** tab, and changes apply immediately to new reservations and renewals.*
+
+---
+
+## 🗄️ Database Design
+
+```mermaid
+erDiagram
+    MEMBERSHIP_PLANS ||--o{ MEMBERS : "has plan"
+    MEMBERS ||--o{ RESERVATIONS : borrows
+    BOOKS ||--o{ RESERVATIONS : "loaned (no FK)"
+    MEMBERS ||--o{ FEEDBACK : submits
+```
+
+| Table | Purpose | Key columns |
+|---|---|---|
+| `membership_plans` | Booking rules per plan | PK `type` (STANDARD / PREMIUM / STUDENT) |
+| `members` | Accounts (staff and members) | PK `id`, unique `email`, FK `membership_type` |
+| `books` | Catalogue | PK `id`, CHECK `available_copies <= total_copies` |
+| `reservations` | Loans and history | PK `id`, FK `member_email`, indexes on `book_id`, `status` |
+| `announcements` | Home page news | PK `id` |
+| `feedback` | Member feedback | PK `id`, CHECK `rating` 1–5 |
+
+> ℹ️ `reservations.book_id` is intentionally **not** a foreign key, so loan history survives when a title is deleted.
 
 ---
 
 ## 📂 Project Structure
 
 ```bash
-PowerRig/
-├── 📁 database/              # powerRig.sql (database structure)
-├── 📁 font/                  # Font definitions for FPDF invoices
-├── 📁 invoices/              # Auto-generated PDF invoices
-├── 📁 resources/             # Product images and site media
-├── 📁 vendor/                # Composer deps (Stripe, PHPMailer)
-├── 📄 composer.json
-├── 📄 connection.php         # Custom MySQL connection wrapper
-├── 📄 index.php              # Application entry point
-├── 📄 adminDashboard.php     # Admin dashboard
-├── 📄 paymentProcess.php     # Stripe checkout logic
-├── 📄 script.js              # Frontend logic and AJAX calls
+BookVerse/
+├── 📁 src/main/
+│   ├── 📁 java/        # Controllers, commands, models, DAOs, services, filters
+│   └── 📁 webapp/      # JSP views, CSS, JS, WEB-INF (web.xml, tld, tags)
+├── 📁 database/        # bookverse.sql (schema + sample data)
+├── 📄 pom.xml          # Maven build
 └── 📄 README.md
 ```
 
 <details>
-<summary><b>🔗 Key pages and what they do (click to expand)</b></summary>
+<summary><b>🧭 Application map (click to expand)</b></summary>
 
 <br/>
 
-| File | Purpose |
+| URL | Command | View |
+|---|---|---|
+| `/` , `index.jsp` | `jsp:forward` → `home.do` | – |
+| `home.do` | `HomeCommand` | `views/home.jsp` |
+| `catalog.do` | `CatalogCommand` | `views/catalog.jsp` |
+| `bookDetail.do?id=` | `BookDetailCommand` | `views/bookDetail.jsp` |
+| `login.do` / `logout.do` | `LoginCommand` / `LogoutCommand` | `views/login.jsp` |
+| `register.do` | `RegisterCommand` | `views/register.jsp` |
+| `dashboard.do` *(member)* | `DashboardCommand` | `views/dashboard.jsp` |
+| `reserve.do`, `return.do` *(POST)* | `ReserveCommand`, `ReturnBookCommand` | redirect |
+| `plans.do` | `PlansCommand` | `views/plans.jsp` |
+| `renew.do`, `changePlan.do` *(POST)* | `RenewCommand`, `ChangePlanCommand` | redirect |
+| `admin*.do` *(STAFF only)* | `AdminCommand` and related | `admin.jsp`, `adminBooks.jsp`, `adminMembers.jsp`, `adminLoans.jsp`, `adminPlans.jsp`, `adminAnnouncements.jsp`, `adminFeedback.jsp`, `adminReports.jsp` |
+| `elDemo.do` | `ElDemoCommand` | `views/elDemo.jsp` |
+| any error / 403 / 404 / 500 | `<error-page>` | `error.jsp` |
+
+**26 JSP files** in total (minimum required: 8).
+
+</details>
+
+<details>
+<summary><b>🎓 Where each assessment requirement is implemented (click to expand)</b></summary>
+
+<br/>
+
+| Requirement | Where to look |
 |---|---|
-| `userProfile.php`, `verificationProcess.php` | Profile management and email verification |
-| `wishlist.php`, `cart.php` | Wishlist and shopping cart |
-| `checkout.php`, `paymentProcess.php` | Checkout flow and Stripe payment |
-| `purchasingHistory.php`, `invoice.php` | Order history and PDF invoice generation |
-| `manageProducts.php`, `addProduct.php`, `updateProduct.php` | Product catalogue management |
-| `manageDelivery.php`, `changeInvoiceStatusProcess.php` | Delivery fees and invoice status |
-| `manageUsers.php` | User blocking and unblocking |
-| `manageCategories.php`, `manageBrands.php` | Brand and category management |
+| EL implicit objects, `.` and `[]` operators | `views/elDemo.jsp` |
+| `jsp:useBean`, `setProperty`, `getProperty` | `catalog.jsp`, `login.jsp`, `register.jsp`, `dashboard.jsp`, `bookDetail.jsp`, `feedback.jsp` |
+| `jsp:include` / `jsp:forward` / `jsp:param` | every view, `index.jsp`, `feedback.jsp` |
+| JSTL core, `fn:` and `fmt:` | across the views |
+| No scriptlets | enforced by `<scripting-invalid>true` in `web.xml` |
+| Custom tags | `RatingTag`, `AvailabilityTag`, `HighlightTag` in `WEB-INF/tld/bookverse.tld` |
+| Tag files | `card.tag`, `alert.tag`, `pageHeader.tag`, `bookcard.tag`, `elrow.tag`, `adminNav.tag` |
+| Security basics | HTML escaping, whitelist redirects, session id change, HttpOnly cookies, POST for state changes, salted password hashes |
 
 </details>
 
@@ -208,47 +291,59 @@ PowerRig/
 
 ## 🧪 Testing
 
-No automated test framework is configured yet, so test manually:
+A 33-point **manual test checklist** is documented in the project. Highlights:
 
-- ✅ User registration and email verification
-- ✅ Adding products (with multiple images) as admin
-- ✅ Wishlist and cart flow
-- ✅ Stripe checkout using [test cards](https://docs.stripe.com/testing)
-- ✅ PDF invoice download
+- ✅ Search, sort and highlight in the catalogue
+- ✅ Custom 404 for invalid book ids, 403 for members opening admin URLs
+- ✅ Loan limits, renewals and plan switching enforced per tier
+- ✅ XSS payloads in the search box are escaped
+- ✅ App still starts (with a warning) if the database is unreachable
+
+```bash
+mvn test   # if automated tests are added
+```
 
 ---
 
-## ⚠️ Known Issues
+## ⚠️ Known Issues and Assumptions
 
-- 📧 **Email deliverability:** verification and password-reset emails need valid SMTP credentials, otherwise those flows break.
-- 🔐 **Security:** the custom database wrapper needs careful input handling. Watch for SQL injection risks when writing or changing raw queries.
+- A "reservation" is an immediate loan of one copy; limits come from the member's plan.
+- Student status is not verified in software (staff check ID at the desk).
+- Only two roles exist: `MEMBER` and `STAFF`. Staff accounts are pre-created.
+- Ratings are static editorial scores. Members can't rate books yet.
+- Passwords use **salted SHA-256** for the demo instead of BCrypt.
 
 ---
 
 ## 🗺️ Roadmap
 
-- [x] Full customer journey (browse → wishlist → cart → Stripe → invoice)
-- [x] Admin dashboard with product, order, user and brand management
-- [ ] Migrate to an **MVC** architecture
-- [ ] Add an **ORM** for safer database access
-- [ ] Add **PHPUnit** tests
-- [ ] Move secrets to **`.env`** support
+- [x] MVC with Front Controller, Command and DAO patterns
+- [x] MySQL mode with in-memory fallback
+- [x] Full admin dashboard and membership plan editor
+- [ ] Connection pooling (HikariCP / Tomcat JDBC pool) and JPA
+- [ ] CSRF tokens and BCrypt password hashing
+- [ ] Pagination, waiting lists and email notifications
+- [ ] REST / JSON API
+- [ ] Internationalization with `fmt:message`
+- [ ] Unit tests for the service layer
+- [ ] Caching of catalogue queries
+- [ ] Migration to Jakarta EE 10 / Tomcat 10
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Found a bug or have an idea? Open an issue or submit a pull request.
+Contributions are welcome!
 
-1. 🍴 Fork the project
-2. 🌿 Create a branch: `git checkout -b feature/AmazingFeature`
-3. 💾 Commit: `git commit -m "Add AmazingFeature"`
-4. 📤 Push: `git push origin feature/AmazingFeature`
+1. 🍴 Fork the repository
+2. 🌿 Create a branch: `git checkout -b feature-name`
+3. 💾 Commit: `git commit -m "Add some feature"`
+4. 📤 Push: `git push origin feature-name`
 5. 🔃 Open a Pull Request
 
 ## 📜 License
 
-Licensed under the **MIT License**.
+Created for educational purposes as part of the **HF2K Web Component Development II** assessment.
 
 ---
 
@@ -258,8 +353,8 @@ Licensed under the **MIT License**.
 
 <a href="https://github.com/Isuru-CodeX"><img src="https://img.shields.io/badge/GitHub-Isuru--CodeX-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 
-⭐ **If you like PowerRig, give it a star!** ⭐
+⭐ **If you like BookVerse, give it a star!** ⭐
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ef4444,100:7f1d1d&height=120&section=footer" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:b45309,100:7c2d12&height=120&section=footer" width="100%" alt="footer" />
 
 </div>
