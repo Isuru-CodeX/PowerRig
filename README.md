@@ -1,136 +1,265 @@
-# PowerRig - E-Commerce Web Application
+<div align="center">
 
-Welcome to PowerRig, a robust, full-stack, PHP-driven web application tailored for the ultimate PC parts, gaming gear, and computer accessories store. PowerRig delivers a comprehensive, end-to-end e-commerce solution that covers the entire customer journey. Shoppers can seamlessly browse an extensive catalog of computer hardware, save their favorite builds or items to a personalized wishlist, add products to their shopping cart, and complete their purchases through a secure and streamlined checkout process powered by Stripe.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ef4444,100:7f1d1d&height=230&section=header&text=PowerRig&fontSize=76&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=PC%20Parts%20%26%20Gaming%20Gear%20E-Commerce&descAlignY=58&descSize=20" width="100%" alt="PowerRig banner" />
 
-Designed as a powerful single-vendor e-commerce platform, PowerRig is the perfect out-of-the-box solution for computer hardware retailers and independent PC parts store owners. It comes equipped with a dedicated and intuitive administrator dashboard that empowers store owners to effortlessly manage product catalogs, monitor inventory levels, track customer orders, and oversee registered users, all from one centralized hub.
+<a href="https://github.com/Isuru-CodeX/PowerRig">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=EF4444&center=true&vCenter=true&width=700&lines=Full-stack+PHP+e-commerce+platform;Cart+%7C+Wishlist+%7C+Stripe+checkout;Automated+PDF+invoices;Powerful+admin+dashboard+for+store+owners" alt="Typing animation" />
+</a>
 
-Whether you are looking to launch a boutique gaming gear store or a comprehensive PC components marketplace, PowerRig provides the essential features and performance to kickstart your online business.
+<br/>
 
-## Features
+<p>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
+  <img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white" alt="Composer" />
+</p>
 
-### For Users
-- **Secure Account Management**: Fully-featured user registration, login, and profile management with secure email verification for new accounts and password resets (`userProfile.php`, `verificationProcess.php`).
-- **Advanced Product Discovery**: Effortlessly browse and search for PC components and gaming gear using advanced search criteria, detailed filtering options, and dynamic category navigation.
-- **Shopping Cart & Personalized Wishlist**: Easily save favorite products for later in a personalized wishlist, or add items directly to a responsive shopping cart for immediate purchase (`wishlist.php`, `cart.php`).
-- **Secure & Seamless Checkout**: Experience a frictionless checkout process with an integrated Stripe payment gateway, ensuring secure and reliable transaction processing (`paymentProcess.php`, `checkout.php`).
-- **Order History & Automated PDF Invoices**: Customers can track their purchasing history in a dedicated dashboard and download professionally formatted, automatically generated PDF invoices for their records (`purchasingHistory.php`, `invoice.php`).
-- **Responsive Design**: A fully responsive frontend layout built with Bootstrap, providing an optimized shopping experience across desktop, tablet, and mobile devices.
+<p>
+  <img src="https://img.shields.io/github/last-commit/Isuru-CodeX/PowerRig?style=flat-square&logo=git&color=green" alt="last commit" />
+  <img src="https://img.shields.io/github/commit-activity/t/Isuru-CodeX/PowerRig?style=flat-square&color=blue" alt="commits" />
+  <img src="https://img.shields.io/github/repo-size/Isuru-CodeX/PowerRig?style=flat-square&color=purple" alt="repo size" />
+  <img src="https://img.shields.io/github/license/Isuru-CodeX/PowerRig?style=flat-square&color=orange" alt="license" />
+  <img src="https://img.shields.io/github/stars/Isuru-CodeX/PowerRig?style=flat-square&logo=github&color=yellow" alt="stars" />
+</p>
 
-### For Administrators
-- **Comprehensive Dashboard & Analytics**: Gain immediate insights into store performance with a centralized admin dashboard featuring key metrics, recent orders, and overall sales overview (`adminDashboard.php`).
-- **Robust Product Management**: Efficiently build and maintain the product catalog. Administrators can add new items with multiple images, update existing product details, manage stock inventory, configure dynamic pricing, and instantly toggle product visibility/status (`manageProducts.php`, `addProduct.php`, `updateProduct.php`).
-- **Streamlined Order & Delivery Management**: Monitor incoming orders, process shipments, update delivery fees dynamically based on regions, and manage overall invoice and fulfillment statuses (`manageDelivery.php`, `changeInvoiceStatusProcess.php`).
-- **Complete User Administration**: Maintain full control over the customer base. View all registered users, manage user statuses, and enforce platform security by handling user blocking or unblocking directly from the admin panel (`manageUsers.php`).
-- **Brand & Category Management**: Dynamically add and link new brands, categories, and models to keep the product catalog structured and up-to-date (`manageCategories.php`, `manageBrands.php`).
+<p>
+  <a href="#-features"><b>✨ Features</b></a> •
+  <a href="#-how-it-works"><b>🔄 How It Works</b></a> •
+  <a href="#-getting-started"><b>🚀 Get Started</b></a> •
+  <a href="#-project-structure"><b>📂 Structure</b></a> •
+  <a href="#-roadmap"><b>🗺️ Roadmap</b></a>
+</p>
 
-## Technologies Used
+</div>
 
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript, Bootstrap 5
-- **Backend:** PHP (Core PHP/Procedural & Object-Oriented without heavy MVC frameworks)
-- **Database:** MySQL (Custom Database connection class wrapper utilizing mysqli - no ORM)
-- **Tools:** Git, Composer (Dependency Management)
-- **Integrations:** Stripe PHP SDK (Payments), PHPMailer (Email Services), FPDF (PDF Generation)
+---
 
-## Prerequisites
+## 🖥️ About
 
-Before running the project, install the required software:
+**PowerRig** is a robust, full-stack, PHP-driven web app built for **PC parts, gaming gear and computer accessories** stores. It covers the entire customer journey: shoppers browse the catalogue, save favourites to a **wishlist**, fill a **cart** and pay through a **Stripe** checkout, then download an automatically generated **PDF invoice**.
 
-- A local web server stack (e.g., XAMPP, WAMP, or LAMP) with **PHP** and **MySQL**.
-- **Composer** (globally installed to manage PHP dependencies).
-- **Git**
-- A **Stripe Account** for setting up test API keys.
+Designed as a **single-vendor platform**, it ships with an admin dashboard where store owners manage products, stock, orders and users from one place.
 
-## Installation
+<!--
+📸 SCREENSHOTS: add your images to an /assets folder, then uncomment this block.
 
-1. Clone the repository:
+<div align="center">
+  <img src="./assets/home.png" width="48%" alt="Home" />
+  <img src="./assets/cart.png" width="48%" alt="Cart" />
+  <img src="./assets/checkout.png" width="48%" alt="Checkout" />
+  <img src="./assets/admin.png" width="48%" alt="Admin dashboard" />
+</div>
+-->
 
-   ```bash
-   git clone <repository-url>
-   ```
+---
 
-2. Open the project directory:
+## ✨ Features
 
-   ```bash
-   cd PowerRig
-   ```
+### 🛒 For Customers
 
-3. Install or resolve the project dependencies:
+| | Feature | Details |
+|---|---|---|
+| 🔐 | **Account management** | Registration, login, profile editing, email verification and password reset |
+| 🔎 | **Product discovery** | Advanced search, filters and dynamic category navigation |
+| ❤️ | **Wishlist and cart** | Save items for later or add them straight to a responsive cart |
+| 💳 | **Secure checkout** | Integrated **Stripe** payment gateway |
+| 🧾 | **Orders and PDF invoices** | Purchase history dashboard and auto-generated downloadable invoices |
+| 📱 | **Responsive design** | Bootstrap 5 layout for desktop, tablet and mobile |
 
-   Run the following command to install Stripe and PHPMailer:
-   ```bash
-   composer install
-   ```
+### 🛡️ For Administrators
 
-4. Configure the database and environment variables as described below.
+| | Feature | Details |
+|---|---|---|
+| 📊 | **Dashboard and analytics** | Key metrics, recent orders and a sales overview |
+| 📦 | **Product management** | Add items with multiple images, edit details, manage stock and pricing, toggle visibility |
+| 🚚 | **Orders and delivery** | Track orders, update delivery fees by region, change invoice and fulfilment status |
+| 👥 | **User administration** | View users, block or unblock accounts |
+| 🏷️ | **Brands and categories** | Add and link brands, categories and models |
 
-## Database Setup
+---
 
-1. Start your database server (e.g., via XAMPP or WAMP).
-2. Open your MySQL client (e.g., phpMyAdmin) and create a new database named `powerRig`.
-3. Import the SQL structure file provided in the repository, located at `database/powerRig.sql`.
-4. Configure the database connection using your local environment settings by updating `connection.php`:
-   ```php
-   Database::$connection = new mysqli("localhost", "root", "your_password", "powerRig", "3306");
-   ```
+## 🔄 How It Works
 
-## Configuration
-
-You will need to configure your API keys directly within the process files, as `.env` files are not currently used in this project setup.
-
-Update the following files with your credentials:
-
-- **Stripe**: Update `paymentProcess.php` (and any other relevant files) with your Stripe Test Secret Key.
-- **Email/PHPMailer**: Update the respective process files (like `verificationProcess.php`, `forgotPasswordProcess.php`) with your SMTP credentials for email delivery to work.
-
-Do not commit real passwords, API keys, or other secrets.
-
-## Running the Project
-
-1. Ensure the `PowerRig` folder is placed within your local server's web root directory (e.g., `htdocs` for XAMPP, `www` for WAMP).
-2. Start the Apache and MySQL services on your web server stack.
-3. Access the application in your browser using the local URL:
-   ```text
-   http://localhost/PowerRig/index.php
-   ```
-
-## Project Structure
-
-```text
-PowerRig/
-├── database/                  # SQL dump (powerRig.sql) for database structure
-├── font/                      # Font definitions for PDF invoice generation (FPDF)
-├── invoices/                  # Automatically generated PDF invoices
-├── resources/                 # Product images and site media assets
-├── vendor/                    # Composer dependencies (Stripe, PHPMailer)
-├── composer.json              # Project dependencies configuration
-├── connection.php             # Custom MySQL database connection wrapper
-├── adminDashboard.php         # Main administrator dashboard
-├── index.php                  # Entry point of the application
-├── paymentProcess.php         # Stripe checkout initialization logic
-├── script.js                  # Main frontend JavaScript logic including AJAX calls
-└── README.md
+```mermaid
+flowchart LR
+    A["👤 Customer"] --> B["🔎 Browse and search"]
+    B --> C["❤️ Wishlist"]
+    B --> D["🛒 Cart"]
+    C --> D
+    D --> E["💳 Stripe checkout"]
+    E --> F["🧾 PDF invoice"]
+    F --> G["📜 Purchase history"]
+    H["🛡️ Admin"] --> I["📦 Products and stock"]
+    H --> J["🚚 Orders and delivery"]
+    H --> K["👥 Users"]
+    I -.-> B
+    E -.-> J
 ```
 
-## Testing
+---
 
-There is currently no automated test framework configured in the repository. Manual testing is required for both frontend and backend functionality. Ensure you test product addition, user registration, and Stripe checkout (using test cards) to verify the flow.
+## 🛠️ Tech Stack
 
-## Known Issues
+<div align="center">
 
-- **Email Deliverability**: Emails for verification and password reset require valid SMTP credentials in the corresponding process files. Ensure these are set up correctly, otherwise functionality will break.
-- **Security**: The custom database wrapper requires careful handling of user inputs. Be mindful of potential SQL injection risks if raw queries are modified or new queries are poorly constructed.
+<img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,php,mysql,git,github,vscode&theme=dark" alt="tech stack icons" />
 
-## Future Improvements
+</div>
 
-- Migrate to an MVC architecture to better separate business logic and presentation.
-- Implement an Object-Relational Mapper (ORM) for safer and easier database interactions.
-- Add an automated testing framework such as PHPUnit.
-- Implement `.env` file support to manage secrets and API keys outside of the codebase.
+| Layer | Technologies |
+|---|---|
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript (AJAX), Bootstrap 5 |
+| **Backend** | PHP (core procedural and object-oriented, no heavy MVC framework) |
+| **Database** | MySQL via a custom `mysqli` wrapper class (no ORM) |
+| **Integrations** | Stripe PHP SDK (payments), PHPMailer (email), FPDF (PDF invoices) |
+| **Tools** | Git, Composer |
 
-## Contributing
+---
 
-Contributions are welcome! If you find any bugs or have suggestions, please open an issue or submit a pull request with your improvements.
+## 🚀 Getting Started
 
-## License
+### ✅ Prerequisites
 
-This project is licensed under the MIT License.
+- 🧰 A local server stack (**XAMPP**, **WAMP** or **LAMP**) with PHP and MySQL
+- 🎼 [Composer](https://getcomposer.org/) installed globally
+- 🔧 Git
+- 💳 A [Stripe](https://stripe.com/) account for test API keys
+
+### 📥 Installation
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/Isuru-CodeX/PowerRig.git
+cd PowerRig
+
+# 2️⃣ Install Stripe and PHPMailer
+composer install
+```
+
+### 🗄️ Database setup
+
+1. Start Apache and MySQL (for example from the XAMPP control panel)
+2. In phpMyAdmin, create a database named **`powerRig`**
+3. Import **`database/powerRig.sql`**
+4. Update the connection in `connection.php`:
+
+```php
+Database::$connection = new mysqli("localhost", "root", "your_password", "powerRig", "3306");
+```
+
+### ⚙️ Configuration
+
+This project doesn't use `.env` files yet, so keys are set directly in the process files:
+
+| What | Where to update |
+|---|---|
+| 💳 **Stripe test secret key** | `paymentProcess.php` (and any other relevant files) |
+| 📧 **SMTP credentials (PHPMailer)** | `verificationProcess.php`, `forgotPasswordProcess.php` |
+
+> 🔒 **Never commit real passwords or API keys.**
+
+### ▶️ Run it
+
+1. Place the `PowerRig` folder in your web root (`htdocs` for XAMPP, `www` for WAMP)
+2. Start Apache and MySQL
+3. Open **http://localhost/PowerRig/index.php**
+
+---
+
+## 📂 Project Structure
+
+```bash
+PowerRig/
+├── 📁 database/              # powerRig.sql (database structure)
+├── 📁 font/                  # Font definitions for FPDF invoices
+├── 📁 invoices/              # Auto-generated PDF invoices
+├── 📁 resources/             # Product images and site media
+├── 📁 vendor/                # Composer deps (Stripe, PHPMailer)
+├── 📄 composer.json
+├── 📄 connection.php         # Custom MySQL connection wrapper
+├── 📄 index.php              # Application entry point
+├── 📄 adminDashboard.php     # Admin dashboard
+├── 📄 paymentProcess.php     # Stripe checkout logic
+├── 📄 script.js              # Frontend logic and AJAX calls
+└── 📄 README.md
+```
+
+<details>
+<summary><b>🔗 Key pages and what they do (click to expand)</b></summary>
+
+<br/>
+
+| File | Purpose |
+|---|---|
+| `userProfile.php`, `verificationProcess.php` | Profile management and email verification |
+| `wishlist.php`, `cart.php` | Wishlist and shopping cart |
+| `checkout.php`, `paymentProcess.php` | Checkout flow and Stripe payment |
+| `purchasingHistory.php`, `invoice.php` | Order history and PDF invoice generation |
+| `manageProducts.php`, `addProduct.php`, `updateProduct.php` | Product catalogue management |
+| `manageDelivery.php`, `changeInvoiceStatusProcess.php` | Delivery fees and invoice status |
+| `manageUsers.php` | User blocking and unblocking |
+| `manageCategories.php`, `manageBrands.php` | Brand and category management |
+
+</details>
+
+---
+
+## 🧪 Testing
+
+No automated test framework is configured yet, so test manually:
+
+- ✅ User registration and email verification
+- ✅ Adding products (with multiple images) as admin
+- ✅ Wishlist and cart flow
+- ✅ Stripe checkout using [test cards](https://docs.stripe.com/testing)
+- ✅ PDF invoice download
+
+---
+
+## ⚠️ Known Issues
+
+- 📧 **Email deliverability:** verification and password-reset emails need valid SMTP credentials, otherwise those flows break.
+- 🔐 **Security:** the custom database wrapper needs careful input handling. Watch for SQL injection risks when writing or changing raw queries.
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Full customer journey (browse → wishlist → cart → Stripe → invoice)
+- [x] Admin dashboard with product, order, user and brand management
+- [ ] Migrate to an **MVC** architecture
+- [ ] Add an **ORM** for safer database access
+- [ ] Add **PHPUnit** tests
+- [ ] Move secrets to **`.env`** support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Found a bug or have an idea? Open an issue or submit a pull request.
+
+1. 🍴 Fork the project
+2. 🌿 Create a branch: `git checkout -b feature/AmazingFeature`
+3. 💾 Commit: `git commit -m "Add AmazingFeature"`
+4. 📤 Push: `git push origin feature/AmazingFeature`
+5. 🔃 Open a Pull Request
+
+## 📜 License
+
+Licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### 📬 Connect with me
+
+<a href="https://github.com/Isuru-CodeX"><img src="https://img.shields.io/badge/GitHub-Isuru--CodeX-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+
+⭐ **If you like PowerRig, give it a star!** ⭐
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ef4444,100:7f1d1d&height=120&section=footer" width="100%" alt="footer" />
+
+</div>
